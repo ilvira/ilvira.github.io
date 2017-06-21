@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: index_page
 title: Вступление
 ---
 LinguaPlay Sydney является филиалом школы русского языка в Англии LinguaPlay. В Сиднее школа начала работать в феврале 2015г.
