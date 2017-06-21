@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Oswald Medium";
+    src: url("Oswald-Medium.eot"); /* IE9 */
+    src: url("Oswald-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Oswald-Medium.woff") format("woff"), /* chrome, firefox */
+    url("Oswald-Medium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Oswald-Medium.svg#Oswald Medium") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

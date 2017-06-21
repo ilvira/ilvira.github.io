@@ -1,0 +1,8 @@
+<input type="checkbox" id="burger-check" />
+<label for="burger-check" class="hamburger-button"></label>
+<ul class="menu">
+  <li><a class="active" href="/#intro">ГЛАВНАЯ</a></li>
+  {% for page in site.pages %}
+    <li><a href="{{page.url}}">{{page.title}}</a></li>
+  {% endfor %}
+</ul>
