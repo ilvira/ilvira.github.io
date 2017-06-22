@@ -1,5 +1,11 @@
+name: Lingua play Sydney
 google_analytics:
 theme:
+sass:
+  sass_dir: _sass
+  style: compressed
 collections:
   pages:
     output: true
+gems:
+  - jekyll-sitemap
