@@ -1,0 +1,49 @@
+{% capture original_content %}
+        {{ content }}
+{% endcapture %}
+
+
+{% assign youtube = original_content | split: "https://www.youtube.com/watch?v=" %}
+{% capture yt_processed %}
+{% for piece in youtube %}
+    {% if forloop.first == true %}
+{{ piece  }}
+    {% else %}
+<div class="videoWrapper">
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/{{ piece | slice: 0, 11 }}" frameborder="0" allowfullscreen></iframe>
+</div>
+{{ piece | slice: 11, 65535 }}
+    {% endif %}
+{% endfor %}
+{% endcapture %}
+
+
+
+{% assign vimeo = yt_processed | normalize_whitespace | split: "https://vimeo.com/" %}
+{% assign digits = '0123456789' %}
+{% for piece in vimeo %}
+    {% if forloop.first == true %}
+{{ piece  }}
+    {% else %}
+<div class="videoWrapper">
+{% for pos in (6..20) %}
+    {% assign _cl = piece | slice: pos %}
+    {% if digits contains _cl %}
+      {% continue %}
+    {% else %}
+    {% assign _id = piece | slice: 0, pos %}
+    {% assign _pos = pos %}
+    {% break %}
+    {% endif %}
+{% endfor %}
+<iframe src="https://player.vimeo.com/video/{{ _id }}?title=0&byline=0&portrait=0" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{{ piece | slice: _pos, 65535 }}
+</div>
+    {% endif %}
+{% endfor %}
+
+
+
+
+
+

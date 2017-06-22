@@ -1,0 +1,16 @@
+---
+layout: null
+---
+[{% for page in site.pages %}
+  {
+    {{page.id | jsonify }},
+    {{page.content | jsonify }},
+    {{page.excerpt | jsonify }},
+    {{page.title | jsonify }},
+    {{page.slug | jsonify }},
+    {{page.date | jsonify }},
+    {{page.tags | jsonify }},
+    {{page.categories | jsonify }},
+    {{page.layout | jsonify }}
+  },
+{% endfor %}]
