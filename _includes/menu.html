@@ -1,7 +1,9 @@
 <input type="checkbox" id="burger-check" />
 <label for="burger-check" class="hamburger-button"></label>
 <ul class="menu">
-  <li><a href="/#intro">ГЛАВНАЯ</a></li>
-  {% for _page in site.pages %} {% if _page.url contains page.url %} <li><a class="active" href="{{_page.url}}">{{_page.title | upcase }}</a></li> {% else %} <li><a href="{{_page.url}}">{{_page.title | upcase }}</a></li> {% endif %}
+{% assign currentPageUrlSize = page.url | size %}
+  {% if currentPageUrlSize < 2 %} <li><a class="active" href="/#intro">ГЛАВНАЯ</a></li> {% else %} <li><a href="/#intro">ГЛАВНАЯ</a></li>
+  {% endif %}
+  {% for _page in site.pages %} {% if currentPageUrlSize > 2 %} {% if _page.url contains page.url %} <li><a class="active" href="{{_page.url}}">{{_page.title | upcase }}</a></li> {% else %} <li><a href="{{_page.url}}">{{_page.title | upcase }}</a></li> {% endif %} {% else %} <li><a href="{{_page.url}}">{{_page.title | upcase }}</a></li> {% endif %}
   {% endfor %}
 </ul>
