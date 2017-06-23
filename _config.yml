@@ -8,4 +8,7 @@ collections:
   pages:
     output: true
 plugins:
-  - jekyll-sitemap
+  jekyll-sitemap
+  jekyll-seo-tag
+  jekyll-paginate
+  jekyll-sass-converter
