@@ -7,8 +7,9 @@ sass:
 collections:
   pages:
     output: true
+    permalink: /:name
 plugins:
-  jekyll-sitemap
-  jekyll-seo-tag
-  jekyll-paginate
-  jekyll-sass-converter
+-  jekyll-sitemap
+-  jekyll-seo-tag
+-  jekyll-paginate
+-  jekyll-sass-converter
