@@ -7,5 +7,5 @@ sass:
 collections:
   pages:
     output: true
-gems:
+plugins:
   - jekyll-sitemap
