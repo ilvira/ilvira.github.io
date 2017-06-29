@@ -7,13 +7,16 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <title>Lingua school</title>
-  <link rel="stylesheet" href="{{ "/assets/app.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/fonts/Oswald-Bold.css" | relative_url }}">
-  <title>{{ site.title }}</title>
-
+  <title>{{ site.name }}</title>
   <!--<script src="/app.js"></script>
   <script>
     require('initialize');
   </script>-->
+
+
+<style type="text/css">{% capture include_to_sassify %}
+@import '20_app';
+{% endcapture %}
+{{ include_to_sassify | scssify }}</style>
 </head>
