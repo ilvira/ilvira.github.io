@@ -10,5 +10,4 @@ collections:
     output: true
     permalink: /:name
 plugins:
--  jekyll-paginate
 -  jekyll-sass-converter
