@@ -21,5 +21,6 @@ layout: null
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <lastmod>{{ page.date }}</lastmod>
+        <lastmod>{{ post.lastmod }}</lastmod>
       </url> {% endif %} {% endfor %}
 </urlset>
