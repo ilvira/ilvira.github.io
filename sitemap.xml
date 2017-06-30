@@ -4,23 +4,21 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
-    <url>
+  <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+      {% if post.lastmod == null %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% else %}<lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>{% endif %}
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
-    </url>
-  {% endfor %}
-  {% for page in site.pages %}
-    {% if page.url contains 'google' %} {% else %} <url>
+  </url>{% endfor %}
+<url>
+        <loc>{{ site.url }}</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+</url>
+{% for page in site.pages %}{% if page.url contains 'google' %}{% else %}<url>
         <loc>{{ site.url }}{{ page.url }}</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <lastmod>{{ page.date }}</lastmod>
-        <lastmod>{{ post.lastmod }}</lastmod>
-      </url> {% endif %} {% endfor %}
+        {% if page.date %}<lastmod>{{ page.date }}</lastmod>{% else %}<lastmod>2017-06-30</lastmod>{% endif %}
+</url> {% endif %} {% endfor %}
 </urlset>
