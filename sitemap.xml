@@ -20,6 +20,6 @@ layout: null
         <loc>{{ site.url }}{{ page.url }}</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        <lastmod>{{ page.date }}</lastmod>
       </url> {% endif %} {% endfor %}
 </urlset>
