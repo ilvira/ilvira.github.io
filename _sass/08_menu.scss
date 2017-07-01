@@ -1,0 +1,92 @@
+.menu {
+  display: inline-block;
+  >li {
+    display: inline-block;
+    &.active {
+      background-color: $faded--red;
+    }
+  }
+  a {
+    transition: background-color 0.5s;
+    display: block;
+    padding: 13px 24px;
+    color: $color_fuscous_gray;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: $font_0;
+    font-weight: 300;
+    &.active {
+      background-color: $faded--red;
+    }
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+
+#nav {
+  position: relative;
+  text-align: center;
+  min-height: 3em;
+  background: $faded--blue;
+  box-shadow: 0 2px 4px $black_10;
+  float: left;
+  width: 100%;
+  z-index: 9;
+  ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+
+#burger-check {
+  &:checked {
+    &~.menu {
+      display: block !important;
+      color: $red;
+      padding-top: 3em;
+      li {
+        display: block;
+        float: left;
+        width: 33%;
+      }
+    }
+    &~.callmenow-small {
+      display: none;
+    }
+    &~label {
+      background-color: $green;
+    }
+    &+.callmenow-small {
+      display: none;
+    }
+  }
+  display: none;
+}
+
+@media (max-width: 500px) {
+  #burger-check:checked~.menu li {
+    width: 50%;
+  }
+}
+
+label.hamburger-button {
+  display: none; // background-image: url($data_uri_3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $yellow;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

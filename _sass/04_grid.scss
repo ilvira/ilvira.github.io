@@ -1,0 +1,104 @@
+.span_4 {
+  width: 100%;
+}
+
+.span_3 {
+  width: 74.6%;
+}
+
+.span_2 {
+  width: 49.2%;
+}
+
+.span_1 {
+  width: 23.8%;
+}
+
+@media only screen and (max-width: $small-width) {
+  .span_4 {
+    width: 100%;
+  }
+  .span_3 {
+    width: 100%;
+  }
+  .span_2 {
+    width: 100%;
+  }
+  .span_1 {
+    width: 100%;
+  }
+  .span_6_of_6 {
+    width: 100%;
+  }
+  .span_5_of_6 {
+    width: 100%;
+  }
+  .span_4_of_6 {
+    width: 100%;
+  }
+  .span_3_of_6 {
+    width: 100%;
+  }
+  .span_2_of_6 {
+    width: 100%;
+  }
+  .span_1_of_6 {
+    width: 100%;
+  }
+}
+
+.span_6_of_6 {
+  width: 100%;
+}
+
+.span_5_of_6 {
+  width: 83.06%;
+}
+
+.span_4_of_6 {
+  width: 66.13%;
+}
+
+.span_3_of_6 {
+  width: 49.2%;
+}
+
+.span_2_of_6 {
+  width: 32.26%;
+}
+
+.span_1_of_6 {
+  width: 15.33%;
+}
+
+.section {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
+.group {
+  zoom: 1;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+  padding: 1em 0;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.float {
+  float: left;
+}
+
+.wrapper {
+  @import '01_page_sizes';
+  max-width: $super-wide-width;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}

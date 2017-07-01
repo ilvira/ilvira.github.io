@@ -1,0 +1,39 @@
+$font_0: Oswald;
+$font_1: arial;
+body {
+  margin: 0;
+  padding: 1em 1em 0 1em;
+  font: 100%/1.4 'Helvetica Neue', arial, helvetica, helve, sans-serif;
+}
+
+h1 {
+  font-family: $font_0, $font_1;
+  font-weight: 300;
+  font-size: 2.2em;
+}
+
+h2 {
+  font-family: $font_0, $font_1;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: $font_0, $font_1;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: $font_0, $font_1;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: $font_0, $font_1;
+  font-weight: 300;
+}
+
+h6 {
+  font-family: $font_0, $font_1;
+  font-weight: 300;
+}

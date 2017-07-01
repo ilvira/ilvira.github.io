@@ -1,0 +1,42 @@
+.reviews {
+  padding: 0;
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 16px;
+    list-style: inherit;
+  }
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 16px;
+    list-style: inherit;
+  }
+}
+
+.user-name {
+  display: inline-block;
+  text-align: left;
+  font-weight: 800;
+}
+
+.user-date {
+  text-align: right;
+  float: right;
+}
+
+.user-header {
+  clear: both;
+  background-color: $faded--blue;
+}
+
+.user-text {
+  display: inline-block;
+}
+
+ul.reviews {
+  font-size: 12.8px;
+  line-height: 18px;
+  vertical-align: baseline;
+  display: inline-block;
+}

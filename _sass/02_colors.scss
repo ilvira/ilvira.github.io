@@ -1,0 +1,21 @@
+$black: #555555;
+$white: #fff;
+$yellow: #feca00;
+$green: #99ca00;
+$red: #fe6600;
+$blue: #336699;
+// -------------
+$blue2:#336699;
+$green2: #669933;
+$red2: #993366;
+$brown2: #996633;
+// -------------
+// sub colors
+$fade: 20;
+$lighten: 40%;
+$faded--yellow: lighten(desaturate($yellow, $fade), $lighten);
+$faded--green: lighten(desaturate($green, $fade), $lighten);
+$faded--red: lighten(desaturate($red, $fade), $lighten);
+$faded--blue: lighten(desaturate($blue, $fade), $lighten);
+$black_10: rgba(0, 0, 0, 0.1);
+$color_fuscous_gray: #555555;

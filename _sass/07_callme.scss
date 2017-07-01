@@ -1,0 +1,31 @@
+.callmenow {
+  text-align: right;
+  margin-top: 1em;
+  float: right;
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: block;
+    padding: .6em 0;
+    margin-left: 8px;
+    text-decoration: none;
+    color: $color_fuscous_gray;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+@media (max-width: $narrow-width) {
+  .callmenow {
+    display: none;
+  }
+}
