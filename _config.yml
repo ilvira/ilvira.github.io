@@ -9,5 +9,5 @@ collections:
   pages:
     output: true
     permalink: /:name
-plugins:
+plugins_dir:
 -  jekyll-sass-converter
