@@ -1,11 +1,59 @@
 ---
 layout: page
-title: Контакты
+title: КОНТАКТЫ
 published: true
 ---
-Ссылки для запуска программ навигации на устройствах (телефоны / планшеты / компьютеры)
+**Адрес школы Balgowlah North:**
 
-10 Manning St, North Balgowlah NSW 2093, Australia
+North Balgowlah public school
+
+10 Manning Street
+
+North Balgowlah 2093
+
+NSW
+
+Australia
+
+
+
+**Адрес школы Dee Why:**
+
+Dee Why public school
+
+72 Fisher road
+
+Dee Why 2099
+
+NSW
+
+Australia
+
+
+
+**Почтовый адрес:**
+
+5 Prince Edward road
+
+Seaforth 2092
+
+NSW
+
+Australia
+
+
+
+**Электронный адрес:**
+
+ilvira.groom@gmail.com
+
+
+
+**Skype:**
+
+ilvira.groom
+
+
 
 -33.783015,151.247397
 
