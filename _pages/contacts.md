@@ -7,13 +7,10 @@ published: true
 
 North Balgowlah public school
 
-10 Manning Street
-
-North Balgowlah 2093
-
-NSW
-
-Australia
+    10 Manning Street
+    North Balgowlah 2093
+    NSW
+    Australia
 
 
 
@@ -21,37 +18,30 @@ Australia
 
 Dee Why public school
 
-72 Fisher road
-
-Dee Why 2099
-
-NSW
-
-Australia
-
+    72 Fisher road
+    Dee Why 2099
+    NSW
+    Australia
 
 
 **Почтовый адрес:**
 
-5 Prince Edward road
-
-Seaforth 2092
-
-NSW
-
-Australia
+    5 Prince Edward road
+    Seaforth 2092
+    NSW
+    Australia
 
 
 
 **Электронный адрес:**
 
-ilvira.groom@gmail.com
+    ilvira.groom@gmail.com
 
 
 
 **Skype:**
 
-ilvira.groom
+    ilvira.groom
 
 
 
