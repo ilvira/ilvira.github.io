@@ -10,7 +10,7 @@ North Balgowlah public school
 [10 Manning Street  
 North Balgowlah 2093  
 NSW  
-Australia](http://maps.google.com/?q=-33.783015,151.247397)  
+Australia](http://maps.google.com/?q=LinguaPlay+Sydney)  
 
 
 **Адрес школы Dee Why:**
