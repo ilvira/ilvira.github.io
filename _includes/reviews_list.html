@@ -2,7 +2,7 @@
 {% assign reviews = site.data.reviews | sort %}
 {% for arr in reviews %}{% assign review = arr[1] %}
 <li>
-{{ arr }}
+{{ arr.message }}
 </li>
 {% endfor %}
 
