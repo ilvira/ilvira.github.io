@@ -1,7 +1,9 @@
 <ul class="reviews">
 {% assign reviews = site.data.reviews | sort %}
 {% for comment in reviews %}
-{{ comment }}
+<li>
+{{ comment.message }}
+</li>
 {% endfor %}
 
 </ul>
