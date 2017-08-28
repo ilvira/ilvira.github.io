@@ -1,0 +1,19 @@
+form {
+  label {
+    width: 100%;
+    float: left; // background-color: antiquewhite;
+    // border-bottom-style: dotted;
+    &.active {
+      border-bottom-style: dotted;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 80%;
+    float: right;
+  }
+  textarea {
+    min-height: 15em;
+  }
+}
