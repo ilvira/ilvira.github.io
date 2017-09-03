@@ -1,0 +1,16 @@
+{% assign my_collection = site.collections | where: "label", "slideshow" | first %}
+
+<style>
+@keyframes slidy { {% assign sl_images = my_collection.files %}{% assign sl_frames = sl_images | size %} {% assign percents_per_frame = 100 | divided_by: sl_frames %} {% assign lastpct = 0 %}{% for i in (0..sl_frames) %}{% assign current_pct = i | times: percents_per_frame %}
+{% if forloop.first != true %}{{ current_pct | minus: 5 }}% { left: {{ lastpct }}%; }{% endif %}
+{% if forloop.last != true %}{{ current_pct }}% { left: {{ -100 | times: i }}%; } {% else %}100% { left: 0%; }{% endif %}
+{% assign lastpct = -100 | times: i %} {% endfor %}
+}
+</style>
+<div id="slider">
+  <figure>
+    {% for file in my_collection.files limit: 500 %} {% assign img_path = file.path | remove_first: "_" %}
+ <img src="{{ img_path }}" alt="logo">
+    {% endfor %}
+  </figure>
+</div>

@@ -9,5 +9,9 @@ collections:
   pages:
     output: true
     permalink: /:name
+  slideshow:
+    output: false
+  shop_sku:
+    output: true
 plugins_dir:
 -  jekyll-sass-converter
