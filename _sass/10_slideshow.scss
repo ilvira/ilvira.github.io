@@ -26,3 +26,9 @@ div#slider figure {
   animation: 30s slidy infinite;
 }
 
+
+@media only screen and (max-width: $small-width) {
+  div#slider {
+    padding-top: 3em;
+  }
+}
