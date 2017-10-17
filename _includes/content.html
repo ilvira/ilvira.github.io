@@ -21,6 +21,7 @@
 
 {% assign vimeo = yt_processed | normalize_whitespace | split: "https://vimeo.com/" %}
 {% assign digits = '0123456789' %}
+{% capture vimeo_processed %}
 {% for piece in vimeo %}
     {% if forloop.first == true %}
 {{ piece  }}
@@ -41,9 +42,6 @@
 {{ piece | slice: _pos, 65535 }}
     {% endif %}
 {% endfor %}
+{% endcapture %}
 
-
-
-
-
-
+{{ vimeo_processed | normalize_whitespace  }}

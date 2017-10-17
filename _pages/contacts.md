@@ -12,7 +12,7 @@ North Balgowlah public school
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3316.1433336373957!2d151.2451651!3d-33.7827966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12abce44a7f5bd%3A0xa9c8328ae5bc75cd!2sLinguaPlay+Sydney!5e0!3m2!1sen!2sau!4v1503901800203" 
   width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
 </iframe>
-
+----
 **Адрес школы Dee Why:**
 
 Dee Why public school
@@ -23,6 +23,7 @@ Dee Why public school
   width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
 </iframe>
 
+----
 **Почтовый адрес:**
 
 5 Prince Edward road  
@@ -43,7 +44,7 @@ ilvira.groom
 
 -33.783015,151.247397
 
-
+----
 [Открыть навигатор понимающий гео координаты](geo:-33.783015,151.247397)
 
 

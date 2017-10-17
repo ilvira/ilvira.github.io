@@ -3,16 +3,23 @@
 <body>
   <div class="wrapper">
     {% include upperTop.html %} {% include nav.html %}
+    {% capture content %}{% include content.html %}{% endcapture %}
 
-    <div class="content section group">
-      <div class="content--left col">
-        <h1 class="post-title">{{ page.title | escape }}</h1>
-        {% include content.html %}
-      </div>
-      <div class="content--right col">
-      </div>
-    </div>
-
+{% assign columns = content | normalize_whitespace | split: "<hr />" %}
+{% for column in columns %}
+{% capture col_counter %}{% cycle 'left', 'right' %}{% endcapture %}
+{% if col_counter contains 'left' %}
+<div class="content section group">
+  <div class="content--left col">
+    {{ column }}
+  </div>
+{% else %}
+  <div class="content--right col">
+    {{ column }}
+  </div> <!-- right column -->
+</div> <!-- content block -->
+{% endif %}
+{% endfor %}
 
   </div>
 
