@@ -83,10 +83,34 @@ label.hamburger-button {
   background-repeat: no-repeat;
   background-position: center;
   background-color: $yellow;
+  background-size: 3em 3em;
   width: 3em;
   height: 3em;
   cursor: pointer;
   position: absolute;
   left: 0;
   top: 0;
+}
+
+ul.submenu {
+    display: none;
+}
+
+
+li.hover-to-show{
+  // cursor: pointer;
+  // font-size: 1em;
+  // font-family: $font_0;
+  // font-weight: 300;
+  // padding: 13px 24px;
+  // color: $color_fuscous_gray;
+
+  &:hover > ul{
+    display: table;
+    position: absolute;
+    background: #bdccdb;
+    // top: 2em;
+    // width: 12em;
+    // left: -3em;
+  }
 }
