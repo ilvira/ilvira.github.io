@@ -1,0 +1,3 @@
+<a href="http://www.google.com/calendar/event?action=TEMPLATE&text={{ include.text | url_encode }}&dates={{ include.start | date: "%Y%m%dT%H%M00" }}/{{ include.end | date: "%Y%m%dT%H%M00" }}&details={{ include.details | uri_escape }}&location={{ include.location | uri_escape }}">
+добавить в гугл календарь {{ include.text }}
+</a>
