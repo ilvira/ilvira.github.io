@@ -7,6 +7,7 @@
   {% for _page in site.pages %} {% if currentPageUrlSize > 2 %} {% if _page.url contains page.url %} <li><a class="active" href="{{_page.url}}">{{_page.title | upcase }}</a></li> {% else %} <li><a href="{{_page.url}}">{{_page.title | upcase }}</a></li> {% endif %} {% else %} <li><a href="{{_page.url}}">{{_page.title | upcase }}</a></li> {% endif %}
   {% endfor %}
 
+{% comment %}
   {% if site.posts | size >0  %}
   <li  class="hover-to-show"><a href="javascript:;">БЛОГ
   </a>
@@ -18,9 +19,10 @@
         {% else %} <li><a href="{{_page.url}}">{{_page.title | upcase }}</a></li>
         {% endif %}
       {% endfor %}
-  
 
   </ul>
   </li>
   {% endif %}
+{% endcomment %}
+
 </ul>
